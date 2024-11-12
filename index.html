@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Card Tailwind CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .old a:hover {
+        color: blue;
+      }
+      a:hover {
+        color: rgb(77, 153, 240);
+      }
+      .new {
+        color: transparent;
+        background: linear-gradient(
+            to right,
+            rgb(0, 119, 255),
+            rgb(0, 255, 119)
+          )
+          text;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navb-start -->
+    <div class="max-w-[1200px] m-auto p-5">
+      <nav class="flex justify-between items-center font-bold">
+        <div class="logo">
+          <img class="w-[100px]" src="assets/onelogo.png" alt="" />
+        </div>
+        <div
+          class="flex gap-10 w-[30%] justify-end text-lg md:hidden text-black"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          class="old flex gap-10 w-[70%] justify-end text-lg hidden md:flex cursor-pointer"
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Offer</a>
+          <a href="#">Blogs</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <button
+          class="bg-blue-500 md:px-5 px-3 py-2 text-white rounded-md cursor-pointer hover:bg-blue-800 transition-colors"
+        >
+          Apply Now
+        </button>
+      </nav>
+      <!-- Navbar-End-->
+
+      <!-- /Section-1-start -->
+      <div class="mt-16 flex justify-center flex-col md:flex-row">
+        <div class="md:w-[50%] w-full mt-16 justify-start items-center">
+          <p class="text-2xl mb-5">Say Hi to</p>
+          <h1 class="text-5xl text-blue-600 font-bold mb-5">One Credit Card</h1>
+          <p class="text-md text-blue-600 mb-1">Co-branded Card Issuers :</p>
+          <img class="md:w-[80%] w-full" src="assets/image.png" alt="" />
+          <p class="md:w-[80%] w-full py-5">
+            India's best metal credit card. Built with full-stack tech. Backed
+            by the principles of simplicity, transparency, and giving back
+            control to the user.
+          </p>
+          <button
+            class="bg-blue-500 px-5 py-2 text-white font-bold rounded-md cursor-pointer hover:bg-blue-800 transition-colors"
+          >
+            Apply Now
+          </button>
+        </div>
+        <div class="md:w-[50%] w-full">
+          <video
+            class="md:h-[600px] h-auto"
+            src="assets/Home_page_Apr_12.mp4"
+            autoplay
+            loop
+          ></video>
+        </div>
+      </div>
+    </div>
+    <!-- /Section-1 end -->
+
+    <!-- /Section-2-start -->
+    <div class="bg-black text-white h-auto pb-5 md:h-[300px]">
+      <div class="max-w-[1200px] m-auto items-center text-center">
+        <p class="new p-10 text-5xl">No Hidden Fees Ever.</p>
+
+        <p class="pb-2 text-3xl">No Joining Fees.</p>
+
+        <p class="text-3xl pb-3">No Annual Fees.</p>
+
+        <p class="text-5xl text-3xl">No Rewards Redemption Fees.</p>
+      </div>
+    </div>
+    <!-- /Section-2 end -->
+
+    <!-- /Section-3-start -->
+    <div class="max-w-[1200px] m-auto p-10">
+      <div class="mt-16 flex md:flex-row justify-center flex-col">
+        <div class="md:w-[50%] w-full">
+          <video
+            class="md:h-[550px] h-auto"
+            src="assets/Website_Card_controls.mp4"
+            autoplay
+            loop
+          ></video>
+        </div>
+        <div
+          class="md:w-[50%] w-full mt-8 flex flex-col items-center text-center md:items-end md:text-end"
+        >
+          <p class="text-4xl mb-5">
+            <img src="assets/phone.png" alt="image" />
+          </p>
+          <p class="text-md text-6xl text-black-600 mb-1">
+            Powerful <br />mobile app
+          </p>
+
+          <p
+            class="md:w-[80%] w-full py-5 text-2xl text-start md:text-end text-[#66667A]"
+          >
+            Control all aspects of your One credit card from the powerful
+            OneCard app - transaction limit, domestic/international use,
+            online/offline use, contactless payments, and much more.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /Section-3-end -->
+
+    <!-- /Section-4-start -->
+    <div class="bg-[#F2F2F2]">
+      <div class="max-w-[1200px] m-auto p-10 bg-[#F5F5F5]">
+        <div class="mt-16 flex justify-center md:flex-row flex-col">
+          <div
+            class="md:w-[50%] w-full mt-8 flex-col md:items-start md:text-start"
+          >
+            <p class="text-4xl mb-5">
+              <img src="assets/image2.png" alt="image" />
+            </p>
+            <p class="text-md text-6xl text-black-600 mb-1">It's metal</p>
+            <p
+              class="w-full md:w-[80%] py-5 text-2xl text-start text-[#66667A]"
+            >
+              Control all aspects of your One credit card from the powerful
+              OneCard app - transaction limit, domestic/international use,
+              online/offline use, contactless payments, and much more.
+            </p>
+          </div>
+          <div class="w-full md:w-[50%]">
+            <video
+              class="h-auto w-full md:h-[450px]"
+              src="assets/Card_rotation_12_Apr.mp4"
+              autoplay
+              loop
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Section-4-end -->
+
+    <!-- section - 5 start -->
+    <div class="max-w-[1200px] m-auto p-10">
+      <div class="mt-16 flex justify-center flex-col md:flex-row">
+        <div class="w-full md:w-[50%]">
+          <video
+            class="h-[450px]"
+            src="assets/OC_seamlessonboarding_1.mp4"
+            autoplay
+            loop
+          ></video>
+        </div>
+        <div
+          class="w-full md:w-[50%] mt-8 flex flex-col md:items-end items-center text-center md:text-end"
+        >
+          <p class="text-4xl mb-5">
+            <img src="assets/image3.png" alt="image" />
+          </p>
+          <p class="text-md text-6xl text-black-600 mb-1">
+            Seamless <br />
+            on-boarding
+          </p>
+          <p
+            class="md:w-[80%] w-full py-5 text-2xl text-start md:text-end text-[#66667A]"
+          >
+            Control all aspects of your One credit card from the powerful
+            OneCard app - transaction limit, domestic/international use,
+            online/offline use, contactless payments, and much more.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section 5- Endt -->
+
+    <!-- section-6-start -->
+    <div class="bg-[#F5F5F5] p-10">
+      <div class="max-w-[1200px] m-auto bg-[#F5F5F5]">
+        <div class="mt-16 flex justify-center flex-col md:flex-row">
+          <div
+            class="md:w-[50%] w-full mt-8 flex flex-col md:items-start items-center text-center md:text-start"
+          >
+            <p class="text-4xl mb-5">
+              <img src="assets/image4.png" alt="image" />
+            </p>
+            <p class="text-md text-6xl text-black-600 mb-1">
+              5X rewards on <br />
+              your top spends
+            </p>
+            <p
+              class="md:w-[80%] w-full py-5 text-2xl text-start text-[#66667A]"
+            >
+              Control all aspects of your One credit card from the powerful
+              OneCard app - transaction limit, domestic/international use,
+              online/offline use, contactless payments, and much more.
+            </p>
+          </div>
+          <div class="md:w-[50%] w-full">
+            <video
+              class="md:h-[450px] h-auto"
+              src="assets/rewards.mp4"
+              autoplay
+              loop
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section-6-end -->
+
+    <!-- section-7-start -->
+    <div class="max-w-[1200px] m-auto pb-16">
+      <p class="items-center text-center pt-14 pb-5 text-4xl font-bold">
+        From Our <span class="text-4xl font-bold text-[#0056B3]">Blog</span>
+      </p>
+
+      <p class="text-center pb-5 text-xl text-[#66688E]">Explore Latest</p>
+
+      <div class="flex justify-between gap-10 flex-col md:flex-row">
+        <div class="md:w-[30%] pl-5 pr-5 w-full md:py-5">
+          <img class="rounded-2xl" src="assets/card1.png" alt="card1" />
+          <p class="py-2 text-[#99999C]">Sept 2024</p>
+          <p class="text-lg text-[#8E7C7C] font-bold">
+            How Do Refunds or Reversals Affect Your One Credit Card Bill?
+          </p>
+        </div>
+        <div class="md:w-[30%] pl-5 pr-5 w-full py-5">
+          <img class="rounded-2xl" src="assets/card2.png" alt="card2" />
+          <p class="py-2 text-[#99999C]">Sept 2024</p>
+          <p class="text-lg text-[#8E7C7C] font-bold">
+            Everything You Need To Know About Visa Credit Cards
+          </p>
+        </div>
+        <div class="md:w-[30%] pl-5 pr-5 w-full py-5">
+          <img class="rounded-2xl" src="assets/card3.png" alt="card3" />
+          <p class="py-2 text-[#99999C]">Sept 2024</p>
+          <p class="text-lg text-[#8E7C7C] font-bold">
+            5 Most Rewarding Credit Cards In India
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section-7-end -->
+
+    <!-- Footer start -->
+    <div class="bg-black">
+      <div class="max-w-[1200px] m-auto bg-black">
+        <div class="text-center items-center text-white">
+          <p class="pt-10 text-6xl font-bold">one</p>
+          <p class="py-5 text-lg font-bold">Crafted with ❤️ in India</p>
+          <p class="text-2xl font-bold text-blue-600">We are all ears!</p>
+          <p class="py-5 text-md font-bold">
+            We are a new kid on the block, eager to learn. All ideas and
+            suggestions are welcome.
+          </p>
+          <p class="pt-5 text-2xl font-bold">Follow Us On</p>
+          <div class="gap-16 text-4xl">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-start text-white flex-col md:flex-row pl-3"
+        >
+          <div class="md:w-[30%] w-full hover:text-white text-white">
+            <p class="text-2xl text-blue-600 py-5">One Credit Card</p>
+            <br />
+            <a href="#">BOBCARD: MITC ,T&C , BT , KFS , OneCash , EMI</a><br />
+            <a href="#">CSB Bank: MITC ,T&C, KFS ,EMI</a><br />
+            <a href="#">Federal Bank: MITC , T&C , BT , KFS , F.D , EMI</a
+            ><br />
+            <a href="#">IDFC FIRST Bank: MITC , T&C</a><br />
+            <a href="#">SBM Bank: F.D , MITC , KYC , T&C , KFS</a><br />
+            <a href="#">SBM Customer Care Details</a><br />
+            <a href="#">SBM Grievance Details</a><br />
+            <a href="#">South Indian Bank: MITC , T&C , BT , KFS , EMI</a><br />
+            <a href="#">Indian Bank: MITC , T&C , KFS</a><br />
+            <a href="#">EMI: T&C</a><br />
+            <a href="#">OneCash: T&C</a>
+          </div>
+          <div class="md:w-[30%] w-full">
+            <p class="text-2xl text-blue-600 py-5">Important Links</p>
+            <br />
+            <a href="#">Cookie Policy</a><br />
+            <a href="#">Do Not Disturb</a><br />
+            <a href="#">Privacy Policy</a><br />
+            <a href="#">Terms Of Use</a><br />
+            <a href="#">Unparliamentary Language</a><br />
+            <a href="#">Secure Usage Tips</a><br />
+            <a href="#">Authorized Collection Agencies</a><br />
+            <a href="#">Disclaimers</a><br />
+            <a href="#">OneCard UPI Terms of Use</a><br />
+          </div>
+          <div class="md:w-[30%] w-full">
+            <p class="text-2xl text-blue-600 py-6">Company</p>
+            <a href="#">About Us</a><br />
+            <a href="#">Join Us</a><br />
+            <a href="#">One Credit Card</a><br />
+            <a href="#">Offers</a><br />
+            <a href="#">Our Blog</a><br />
+            <a href="#">POSH @ Work</a><br />
+            <a href="#">OneScore</a>
+          </div>
+        </div>
+        <div class="items-center text-white text-center">
+          <img
+            class="md:w-[100%] w-full justify-center items-center text-center"
+            src="assets/image.png"
+            alt="img"
+          />
+          <p class="pb-10 pt-5">
+            Copyright © 2023 FPL Technologies Pvt. Ltd. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer start -->
+  </body>
+</html>
